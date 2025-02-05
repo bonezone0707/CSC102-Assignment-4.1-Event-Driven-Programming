@@ -1,35 +1,81 @@
 /*
-declaration block:
-
-selector{
-    property: value;
-    property2: value;
-}
+Improved CSS for better user experience and modern design
 */
 
-body{
-    background-color: rgb(202, 37, 37);
-    color: rgb(0, 0, 0);
+body {
+    background-color: #f5f5f5; /* Softer background for less strain on eyes */
+    color: #333333; /* Darker gray for better readability */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    margin: 0;
+    padding: 0;
 }
 
-nav{
-    height: 600px;
-    width: 200px;
+nav {
+    height: 100vh; /* Full viewport height for consistent navigation */
+    width: 220px; /* Slightly wider for better readability */
     float: left;
-    padding: 5px;
-    line-height: 30px;
+    padding: 20px; /* More padding for comfortable spacing */
+    line-height: 1.8; /* Improved line height for better readability */
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Fixing nav for constant accessibility */
 }
 
 footer {
     text-align: center;
-    margin-right: 200px;
+    margin: 20px 0; /* Balanced margin for footer */
+    padding: 10px 0;
+    background-color: #ffffff; /* Footer background for separation */
+    color: #666666; /* Lighter text for footer */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle top shadow */
+    position: fixed;
+    width: calc(100% - 220px); /* Adjust width considering nav */
+    bottom: 0;
+    left: 220px;
 }
 
 #memeImage {
-    margin-right: 200px;
-    width: 400px;
+    display: block; /* Ensures proper centering */
+    margin: 20px auto; /* Centers image horizontally */
+    width: 100%;
+    max-width: 400px; /* Restricts maximum width */
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 h1 {
     text-align: center;
+    margin: 20px 0; /* Adds spacing around heading */
+    font-size: 2.5rem; /* Larger font for emphasis */
+    color: #202020; /* Darker color for contrast */
+}
+
+/* Additional improvements */
+
+main {
+    margin-left: 240px; /* Prevent content from hiding behind nav */
+    padding: 20px;
+}
+
+a {
+    color: #007BFF; /* Standard link color for familiarity */
+    text-decoration: none; /* Removes underlines for cleaner look */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for accessibility */
+}
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
